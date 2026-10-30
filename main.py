@@ -9,8 +9,6 @@ with open("data.json") as f:
     payload = json.load(f)
 
 df = pd.DataFrame(payload["data"])
-# df = pd.read_csv('data.csv', usecols=['data'])
-print(df)
 
 
 # Sidebar filters
@@ -18,6 +16,7 @@ st.sidebar.header("Filters")
 category = st.sidebar.selectbox("Category", ["All"] + sorted(df["category"].unique()))
 min_level = st.sidebar.slider("Minimum max level", 1, int(df["maxLevel"].max()), 1)
 treasure_only = st.sidebar.checkbox("Treasure enchantments only", value=False)
+st.sidebar.caption("Treasure enchantments are those that cannot be obtained from enchanting tables.")
 
 # Apply filters from sidebar
 filtered = df[df["maxLevel"] >= min_level]
@@ -26,7 +25,10 @@ if category != "All":
 if treasure_only:
     filtered = filtered[filtered["treasureOnly"]]
 
+
 filtered = filtered.rename(columns={"weight": "weight (rarity)", "maxLevel": "max level", "versionAdded": "version added", "treasureOnly": "treasure only"})
+
+
 
 tables, plots = st.tabs(["Data", "Charts"])
 
