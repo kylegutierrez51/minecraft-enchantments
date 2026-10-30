@@ -1,0 +1,1211 @@
+{
+  "success": true,
+  "count": 40,
+  "data": [
+    {
+      "name": "Sharpness",
+      "id": "sharpness",
+      "maxLevel": 5,
+      "description": "Increases melee damage dealt to all mobs.",
+      "effectPerLevel": [
+        "Level 1: +1 damage (+0.5 hearts)",
+        "Level 2: +1.5 damage (+0.75 hearts)",
+        "Level 3: +2 damage (+1 heart)",
+        "Level 4: +2.5 damage (+1.25 hearts)",
+        "Level 5: +3 damage (+1.5 hearts)"
+      ],
+      "applicableItems": [
+        "sword",
+        "axe"
+      ],
+      "incompatibleWith": [
+        "Smite",
+        "Bane of Arthropods",
+        "Density",
+        "Breach"
+      ],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 10,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.0",
+      "category": "melee",
+      "notes": "The most versatile damage enchantment since it works against all mobs. Formula: 0.5 * level + 0.5 extra damage."
+    },
+    {
+      "name": "Smite",
+      "id": "smite",
+      "maxLevel": 5,
+      "description": "Increases damage dealt to undead mobs (zombies, skeletons, wither, phantoms, etc.).",
+      "effectPerLevel": [
+        "Level 1: +2.5 damage (+1.25 hearts) vs undead",
+        "Level 2: +5 damage (+2.5 hearts) vs undead",
+        "Level 3: +7.5 damage (+3.75 hearts) vs undead",
+        "Level 4: +10 damage (+5 hearts) vs undead",
+        "Level 5: +12.5 damage (+6.25 hearts) vs undead"
+      ],
+      "applicableItems": [
+        "sword",
+        "axe"
+      ],
+      "incompatibleWith": [
+        "Sharpness",
+        "Bane of Arthropods",
+        "Density",
+        "Breach"
+      ],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 5,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.0",
+      "category": "melee",
+      "notes": "Deals 2.5 extra damage per level to undead mobs. More damage than Sharpness against undead but useless against other mobs."
+    },
+    {
+      "name": "Bane of Arthropods",
+      "id": "bane_of_arthropods",
+      "maxLevel": 5,
+      "description": "Increases damage dealt to arthropod mobs (spiders, cave spiders, bees, silverfish, endermites).",
+      "effectPerLevel": [
+        "Level 1: +2.5 damage (+1.25 hearts) vs arthropods",
+        "Level 2: +5 damage (+2.5 hearts) vs arthropods",
+        "Level 3: +7.5 damage (+3.75 hearts) vs arthropods",
+        "Level 4: +10 damage (+5 hearts) vs arthropods",
+        "Level 5: +12.5 damage (+6.25 hearts) vs arthropods"
+      ],
+      "applicableItems": [
+        "sword",
+        "axe"
+      ],
+      "incompatibleWith": [
+        "Sharpness",
+        "Smite",
+        "Density",
+        "Breach"
+      ],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 5,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.0",
+      "category": "melee",
+      "notes": "Also applies Slowness IV to arthropod mobs on hit for 1-1.5 seconds at level 1, increasing by 0.5 seconds per level."
+    },
+    {
+      "name": "Fire Aspect",
+      "id": "fire_aspect",
+      "maxLevel": 2,
+      "description": "Sets the target on fire when hit, dealing fire damage over time.",
+      "effectPerLevel": [
+        "Level 1: Sets target on fire for 4 seconds (3 fire damage / 1.5 hearts)",
+        "Level 2: Sets target on fire for 8 seconds (7 fire damage / 3.5 hearts)"
+      ],
+      "applicableItems": [
+        "sword"
+      ],
+      "incompatibleWith": [],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 2,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.0",
+      "category": "melee",
+      "notes": "Mobs killed by fire drop cooked meat instead of raw. Fire damage does not stack with multiple hits. Does not work on Nether mobs that are immune to fire."
+    },
+    {
+      "name": "Knockback",
+      "id": "knockback",
+      "maxLevel": 2,
+      "description": "Increases the knockback dealt to mobs and players when hit.",
+      "effectPerLevel": [
+        "Level 1: +3 blocks of knockback",
+        "Level 2: +6 blocks of knockback"
+      ],
+      "applicableItems": [
+        "sword"
+      ],
+      "incompatibleWith": [],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 5,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.0",
+      "category": "melee",
+      "notes": "Adds 3 blocks of knockback per level on top of the base knockback from sprinting and attacking."
+    },
+    {
+      "name": "Looting",
+      "id": "looting",
+      "maxLevel": 3,
+      "description": "Increases the amount and chance of mob drops when killing mobs.",
+      "effectPerLevel": [
+        "Level 1: +1 max common drops, +0.5% rare drop chance per level",
+        "Level 2: +2 max common drops, +1% rare drop chance per level",
+        "Level 3: +3 max common drops, +1.5% rare drop chance per level"
+      ],
+      "applicableItems": [
+        "sword"
+      ],
+      "incompatibleWith": [],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 2,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.0",
+      "category": "melee",
+      "notes": "Increases the maximum number of common drops by 1 per level. Also increases the chance of rare drops like wither skeleton skulls and ender pearls."
+    },
+    {
+      "name": "Sweeping Edge",
+      "id": "sweeping_edge",
+      "maxLevel": 3,
+      "description": "Increases the damage of sweep attacks (Java Edition only).",
+      "effectPerLevel": [
+        "Level 1: Sweep attack does 50% of hit damage",
+        "Level 2: Sweep attack does 67% of hit damage",
+        "Level 3: Sweep attack does 75% of hit damage"
+      ],
+      "applicableItems": [
+        "sword"
+      ],
+      "incompatibleWith": [],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 2,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.11.1",
+      "category": "melee",
+      "notes": "Java Edition only. The sweep attack damage formula is: 1 + Attack_Damage * (level / (level + 1)). Without this enchantment, sweep attacks deal 1 damage."
+    },
+    {
+      "name": "Power",
+      "id": "power",
+      "maxLevel": 5,
+      "description": "Increases arrow damage from bows.",
+      "effectPerLevel": [
+        "Level 1: +50% damage (base 6 -\u003E 9)",
+        "Level 2: +75% damage (base 6 -\u003E 10.5)",
+        "Level 3: +100% damage (base 6 -\u003E 12)",
+        "Level 4: +125% damage (base 6 -\u003E 13.5)",
+        "Level 5: +150% damage (base 6 -\u003E 15)"
+      ],
+      "applicableItems": [
+        "bow"
+      ],
+      "incompatibleWith": [],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 10,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.0",
+      "category": "ranged",
+      "notes": "Formula: damage * (1 + 0.25 * (level + 1)). At Power V with a fully charged bow, arrows deal 23-25 damage."
+    },
+    {
+      "name": "Punch",
+      "id": "punch",
+      "maxLevel": 2,
+      "description": "Increases the knockback of arrows shot from a bow.",
+      "effectPerLevel": [
+        "Level 1: +3 blocks of knockback per arrow",
+        "Level 2: +6 blocks of knockback per arrow"
+      ],
+      "applicableItems": [
+        "bow"
+      ],
+      "incompatibleWith": [],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 2,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.0",
+      "category": "ranged",
+      "notes": "The ranged equivalent of Knockback. Useful for keeping mobs at distance."
+    },
+    {
+      "name": "Flame",
+      "id": "flame",
+      "maxLevel": 1,
+      "description": "Arrows shot from the bow are set on fire, igniting targets.",
+      "effectPerLevel": [
+        "Level 1: Arrows set targets on fire for 5 seconds (4 fire damage / 2 hearts)"
+      ],
+      "applicableItems": [
+        "bow"
+      ],
+      "incompatibleWith": [],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 2,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.0",
+      "category": "ranged",
+      "notes": "Flame arrows can also light TNT and campfires. Does not work on fire-immune mobs."
+    },
+    {
+      "name": "Infinity",
+      "id": "infinity",
+      "maxLevel": 1,
+      "description": "Prevents regular arrows from being consumed when shot. Requires at least one arrow in inventory.",
+      "effectPerLevel": [
+        "Level 1: Regular arrows are not consumed (still need 1 arrow in inventory)"
+      ],
+      "applicableItems": [
+        "bow"
+      ],
+      "incompatibleWith": [
+        "Mending"
+      ],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 1,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.1",
+      "category": "ranged",
+      "notes": "Only works with regular arrows, not tipped or spectral arrows. Incompatible with Mending, so the bow will eventually break."
+    },
+    {
+      "name": "Multishot",
+      "id": "multishot",
+      "maxLevel": 1,
+      "description": "Shoots 3 arrows or firework rockets at the cost of one, with a slight spread.",
+      "effectPerLevel": [
+        "Level 1: Fires 3 projectiles instead of 1 (only 1 can be picked up)"
+      ],
+      "applicableItems": [
+        "crossbow"
+      ],
+      "incompatibleWith": [
+        "Piercing"
+      ],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 2,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.14",
+      "category": "ranged",
+      "notes": "Only one of the three arrows can be picked up. Causes 3x durability loss per shot. Effective against groups of mobs."
+    },
+    {
+      "name": "Piercing",
+      "id": "piercing",
+      "maxLevel": 4,
+      "description": "Arrows from crossbows pass through multiple entities.",
+      "effectPerLevel": [
+        "Level 1: Arrows pass through 1 extra entity",
+        "Level 2: Arrows pass through 2 extra entities",
+        "Level 3: Arrows pass through 3 extra entities",
+        "Level 4: Arrows pass through 4 extra entities"
+      ],
+      "applicableItems": [
+        "crossbow"
+      ],
+      "incompatibleWith": [
+        "Multishot"
+      ],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 10,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.14",
+      "category": "ranged",
+      "notes": "Arrows can pass through the specified number of entities. Also allows arrows to pass through shields."
+    },
+    {
+      "name": "Quick Charge",
+      "id": "quick_charge",
+      "maxLevel": 3,
+      "description": "Decreases the loading time of crossbows.",
+      "effectPerLevel": [
+        "Level 1: Loading time reduced by 0.25 seconds (1.0s total)",
+        "Level 2: Loading time reduced by 0.50 seconds (0.75s total)",
+        "Level 3: Loading time reduced by 0.75 seconds (0.5s total)"
+      ],
+      "applicableItems": [
+        "crossbow"
+      ],
+      "incompatibleWith": [],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 5,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.14",
+      "category": "ranged",
+      "notes": "Reduces crossbow loading time by 0.25 seconds per level. At Quick Charge III, the crossbow loads in 0.5 seconds, faster than a bow."
+    },
+    {
+      "name": "Loyalty",
+      "id": "loyalty",
+      "maxLevel": 3,
+      "description": "Causes the trident to return to the player after being thrown.",
+      "effectPerLevel": [
+        "Level 1: Trident returns slowly",
+        "Level 2: Trident returns at medium speed",
+        "Level 3: Trident returns quickly"
+      ],
+      "applicableItems": [
+        "trident"
+      ],
+      "incompatibleWith": [
+        "Riptide"
+      ],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 5,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.13",
+      "category": "ranged",
+      "notes": "Higher levels make the trident return faster. If the player dies while the trident is returning, it drops as an item. The trident does not return if thrown into the void."
+    },
+    {
+      "name": "Riptide",
+      "id": "riptide",
+      "maxLevel": 3,
+      "description": "Launches the player in the direction they are facing when thrown while in water or rain.",
+      "effectPerLevel": [
+        "Level 1: Launches player a short distance",
+        "Level 2: Launches player a medium distance",
+        "Level 3: Launches player a long distance"
+      ],
+      "applicableItems": [
+        "trident"
+      ],
+      "incompatibleWith": [
+        "Loyalty",
+        "Channeling"
+      ],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 2,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.13",
+      "category": "ranged",
+      "notes": "Only works when the player is in water or rain. The trident is not thrown; instead, the player is launched. Can be combined with elytra for fast travel."
+    },
+    {
+      "name": "Channeling",
+      "id": "channeling",
+      "maxLevel": 1,
+      "description": "Summons a lightning bolt when a mob is hit with the thrown trident during a thunderstorm.",
+      "effectPerLevel": [
+        "Level 1: Summons lightning on hit during thunderstorms"
+      ],
+      "applicableItems": [
+        "trident"
+      ],
+      "incompatibleWith": [
+        "Riptide"
+      ],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 1,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.13",
+      "category": "ranged",
+      "notes": "Only works during thunderstorms and only on mobs that are exposed to the sky. Converts creepers into charged creepers, villagers into witches, pigs into zombified piglins, and mooshrooms switch type."
+    },
+    {
+      "name": "Impaling",
+      "id": "impaling",
+      "maxLevel": 5,
+      "description": "Increases trident damage against aquatic mobs (Java) or mobs in contact with water (Bedrock).",
+      "effectPerLevel": [
+        "Level 1: +2.5 damage (+1.25 hearts) to aquatic mobs",
+        "Level 2: +5 damage (+2.5 hearts) to aquatic mobs",
+        "Level 3: +7.5 damage (+3.75 hearts) to aquatic mobs",
+        "Level 4: +10 damage (+5 hearts) to aquatic mobs",
+        "Level 5: +12.5 damage (+6.25 hearts) to aquatic mobs"
+      ],
+      "applicableItems": [
+        "trident"
+      ],
+      "incompatibleWith": [],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 2,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.13",
+      "category": "ranged",
+      "notes": "In Java Edition, only affects aquatic mobs (guardians, dolphins, squids, etc.). In Bedrock Edition, affects any mob touching water or in rain."
+    },
+    {
+      "name": "Efficiency",
+      "id": "efficiency",
+      "maxLevel": 5,
+      "description": "Increases mining speed. When applied to an axe, increases the chance of stripping a log on use.",
+      "effectPerLevel": [
+        "Level 1: +2 mining speed (1 + level^2 bonus)",
+        "Level 2: +5 mining speed",
+        "Level 3: +10 mining speed",
+        "Level 4: +17 mining speed",
+        "Level 5: +26 mining speed"
+      ],
+      "applicableItems": [
+        "pickaxe",
+        "shovel",
+        "axe",
+        "hoe"
+      ],
+      "incompatibleWith": [],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 10,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.0",
+      "category": "mining",
+      "notes": "Mining speed bonus formula: level^2 + 1. At Efficiency V with a diamond pickaxe, instant-mines stone and netherrack. Also applies to shears."
+    },
+    {
+      "name": "Fortune",
+      "id": "fortune",
+      "maxLevel": 3,
+      "description": "Increases the number of drops from mining blocks like ores, crops, and gravel.",
+      "effectPerLevel": [
+        "Level 1: 33% chance of 2x drops (avg 1.33x)",
+        "Level 2: 25% chance each of 2x and 3x drops (avg 1.75x)",
+        "Level 3: 20% chance each of 2x, 3x, and 4x drops (avg 2.2x)"
+      ],
+      "applicableItems": [
+        "pickaxe",
+        "shovel",
+        "axe",
+        "hoe"
+      ],
+      "incompatibleWith": [
+        "Silk Touch"
+      ],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 2,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.0",
+      "category": "mining",
+      "notes": "Works on coal, diamond, emerald, lapis lazuli, nether quartz, amethyst, redstone ore, nether gold ore, copper ore, crops (wheat seeds, beetroot seeds, carrots, potatoes), and glowstone."
+    },
+    {
+      "name": "Silk Touch",
+      "id": "silk_touch",
+      "maxLevel": 1,
+      "description": "Mined blocks drop themselves instead of their usual drops (e.g., stone instead of cobblestone).",
+      "effectPerLevel": [
+        "Level 1: Blocks drop themselves (glass, stone, ores, etc.)"
+      ],
+      "applicableItems": [
+        "pickaxe",
+        "shovel",
+        "axe",
+        "hoe"
+      ],
+      "incompatibleWith": [
+        "Fortune"
+      ],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 1,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.0",
+      "category": "mining",
+      "notes": "Allows collecting glass, ice, mycelium, grass blocks, coral, ender chests (without losing obsidian), and ore blocks themselves. Does not work on spawners or budding amethyst."
+    },
+    {
+      "name": "Protection",
+      "id": "protection",
+      "maxLevel": 4,
+      "description": "Reduces most types of damage taken.",
+      "effectPerLevel": [
+        "Level 1: 4% damage reduction",
+        "Level 2: 8% damage reduction",
+        "Level 3: 12% damage reduction",
+        "Level 4: 16% damage reduction"
+      ],
+      "applicableItems": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots"
+      ],
+      "incompatibleWith": [
+        "Fire Protection",
+        "Blast Protection",
+        "Projectile Protection"
+      ],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 10,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.0",
+      "category": "armor",
+      "notes": "Reduces almost all damage types. Each level adds 4% damage reduction. Full Protection IV on all 4 armor pieces gives 64% reduction (capped at 80% from enchantments)."
+    },
+    {
+      "name": "Fire Protection",
+      "id": "fire_protection",
+      "maxLevel": 4,
+      "description": "Reduces fire damage taken and decreases burn time.",
+      "effectPerLevel": [
+        "Level 1: 8% fire damage reduction, -15% burn time",
+        "Level 2: 16% fire damage reduction, -15% burn time",
+        "Level 3: 24% fire damage reduction, -15% burn time",
+        "Level 4: 32% fire damage reduction, -15% burn time"
+      ],
+      "applicableItems": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots"
+      ],
+      "incompatibleWith": [
+        "Protection",
+        "Blast Protection",
+        "Projectile Protection"
+      ],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 5,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.0",
+      "category": "armor",
+      "notes": "Each level reduces fire damage by 8%. Also reduces burn time by 15% per level across all armor pieces. Useful for Nether exploration."
+    },
+    {
+      "name": "Blast Protection",
+      "id": "blast_protection",
+      "maxLevel": 4,
+      "description": "Reduces explosion damage and knockback from explosions.",
+      "effectPerLevel": [
+        "Level 1: 8% explosion damage reduction, -15% explosion knockback",
+        "Level 2: 16% explosion damage reduction, -15% explosion knockback",
+        "Level 3: 24% explosion damage reduction, -15% explosion knockback",
+        "Level 4: 32% explosion damage reduction, -15% explosion knockback"
+      ],
+      "applicableItems": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots"
+      ],
+      "incompatibleWith": [
+        "Protection",
+        "Fire Protection",
+        "Projectile Protection"
+      ],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 2,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.0",
+      "category": "armor",
+      "notes": "Reduces explosion damage by 8% per level. Also reduces explosion knockback by 15% per level. Stacks across armor pieces."
+    },
+    {
+      "name": "Projectile Protection",
+      "id": "projectile_protection",
+      "maxLevel": 4,
+      "description": "Reduces damage taken from projectiles (arrows, fireballs, tridents, etc.).",
+      "effectPerLevel": [
+        "Level 1: 8% projectile damage reduction",
+        "Level 2: 16% projectile damage reduction",
+        "Level 3: 24% projectile damage reduction",
+        "Level 4: 32% projectile damage reduction"
+      ],
+      "applicableItems": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots"
+      ],
+      "incompatibleWith": [
+        "Protection",
+        "Fire Protection",
+        "Blast Protection"
+      ],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 5,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.0",
+      "category": "armor",
+      "notes": "Reduces damage from arrows, ghast fireballs, blaze fireballs, tridents, shulker bullets, and llama spit. Each level adds 8% reduction."
+    },
+    {
+      "name": "Thorns",
+      "id": "thorns",
+      "maxLevel": 3,
+      "description": "Reflects some damage back to attackers when hit.",
+      "effectPerLevel": [
+        "Level 1: 15% chance to deal 1-4 damage to attacker",
+        "Level 2: 30% chance to deal 1-4 damage to attacker",
+        "Level 3: 45% chance to deal 1-4 damage to attacker"
+      ],
+      "applicableItems": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots"
+      ],
+      "incompatibleWith": [],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 1,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.4.6",
+      "category": "armor",
+      "notes": "Causes 2 durability damage to the armor piece regardless of whether damage was reflected. Chance is 15% per level. At Thorns III, there is a 45% chance of reflecting damage."
+    },
+    {
+      "name": "Respiration",
+      "id": "respiration",
+      "maxLevel": 3,
+      "description": "Extends the time you can breathe underwater and improves underwater vision.",
+      "effectPerLevel": [
+        "Level 1: +15 seconds underwater breathing (30s total)",
+        "Level 2: +30 seconds underwater breathing (45s total)",
+        "Level 3: +45 seconds underwater breathing (60s total)"
+      ],
+      "applicableItems": [
+        "helmet"
+      ],
+      "incompatibleWith": [],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 2,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.0",
+      "category": "armor",
+      "notes": "Adds 15 seconds of underwater breathing per level. Also reduces drowning damage rate. At Respiration III, you can breathe for 60 seconds underwater."
+    },
+    {
+      "name": "Aqua Affinity",
+      "id": "aqua_affinity",
+      "maxLevel": 1,
+      "description": "Increases underwater mining speed to be the same as on land.",
+      "effectPerLevel": [
+        "Level 1: Removes the 5x mining speed penalty while underwater"
+      ],
+      "applicableItems": [
+        "helmet"
+      ],
+      "incompatibleWith": [],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 2,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.0",
+      "category": "armor",
+      "notes": "Without Aqua Affinity, mining underwater takes 5 times longer. This enchantment removes that penalty entirely. Does not affect the additional 5x penalty for not standing on solid ground."
+    },
+    {
+      "name": "Depth Strider",
+      "id": "depth_strider",
+      "maxLevel": 3,
+      "description": "Increases underwater movement speed.",
+      "effectPerLevel": [
+        "Level 1: Reduces water slowdown by 1/3",
+        "Level 2: Reduces water slowdown by 2/3",
+        "Level 3: Water movement speed matches land speed"
+      ],
+      "applicableItems": [
+        "boots"
+      ],
+      "incompatibleWith": [
+        "Frost Walker"
+      ],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 2,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.8",
+      "category": "armor",
+      "notes": "At Depth Strider III, you move at the same speed in water as on land. Does not increase vertical movement speed (swimming up/down). Cannot be combined with Frost Walker."
+    },
+    {
+      "name": "Frost Walker",
+      "id": "frost_walker",
+      "maxLevel": 2,
+      "description": "Creates frosted ice blocks when walking over water.",
+      "effectPerLevel": [
+        "Level 1: Turns water into frosted ice in a 2+level block radius",
+        "Level 2: Turns water into frosted ice in a 2+level block radius"
+      ],
+      "applicableItems": [
+        "boots"
+      ],
+      "incompatibleWith": [
+        "Depth Strider"
+      ],
+      "obtainedFrom": [
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 2,
+      "treasureOnly": true,
+      "curseOf": false,
+      "versionAdded": "1.9",
+      "category": "armor",
+      "notes": "Treasure enchantment - cannot be obtained from enchanting tables. Creates frosted ice in a radius of 2 + level blocks. The ice melts over time. Does not work on flowing water, waterlogged blocks, or lava."
+    },
+    {
+      "name": "Soul Speed",
+      "id": "soul_speed",
+      "maxLevel": 3,
+      "description": "Increases walking speed on soul sand and soul soil.",
+      "effectPerLevel": [
+        "Level 1: Slightly increased speed on soul blocks",
+        "Level 2: Moderately increased speed on soul blocks",
+        "Level 3: Greatly increased speed on soul blocks"
+      ],
+      "applicableItems": [
+        "boots"
+      ],
+      "incompatibleWith": [],
+      "obtainedFrom": [
+        "Piglin Bartering",
+        "Bastion Remnant Loot"
+      ],
+      "weight": 1,
+      "treasureOnly": true,
+      "curseOf": false,
+      "versionAdded": "1.16",
+      "category": "armor",
+      "notes": "Treasure enchantment only obtainable through piglin bartering or bastion remnant loot. Cannot be obtained from enchanting tables, fishing, or villager trading. Has a chance to consume durability."
+    },
+    {
+      "name": "Swift Sneak",
+      "id": "swift_sneak",
+      "maxLevel": 3,
+      "description": "Increases sneaking speed while wearing enchanted leggings.",
+      "effectPerLevel": [
+        "Level 1: Sneaking speed is 45% of walking speed (up from 30%)",
+        "Level 2: Sneaking speed is 60% of walking speed",
+        "Level 3: Sneaking speed is 75% of walking speed"
+      ],
+      "applicableItems": [
+        "leggings"
+      ],
+      "incompatibleWith": [],
+      "obtainedFrom": [
+        "Ancient City Loot Chest"
+      ],
+      "weight": 1,
+      "treasureOnly": true,
+      "curseOf": false,
+      "versionAdded": "1.19",
+      "category": "armor",
+      "notes": "Treasure enchantment only found in ancient city loot chests. Cannot be obtained from enchanting tables or villager trading. Extremely useful for sculk sensor areas and PvP."
+    },
+    {
+      "name": "Feather Falling",
+      "id": "feather_falling",
+      "maxLevel": 4,
+      "description": "Reduces fall damage and ender pearl teleportation damage.",
+      "effectPerLevel": [
+        "Level 1: 12% fall damage reduction",
+        "Level 2: 24% fall damage reduction",
+        "Level 3: 36% fall damage reduction",
+        "Level 4: 48% fall damage reduction"
+      ],
+      "applicableItems": [
+        "boots"
+      ],
+      "incompatibleWith": [],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 5,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.0",
+      "category": "armor",
+      "notes": "Reduces fall damage by 12% per level. At Feather Falling IV, fall damage is reduced by 48%. Stacks with Protection for up to 80% total fall damage reduction."
+    },
+    {
+      "name": "Unbreaking",
+      "id": "unbreaking",
+      "maxLevel": 3,
+      "description": "Increases item durability by giving a chance to not consume durability on use.",
+      "effectPerLevel": [
+        "Level 1: ~50% chance to not lose durability (tools), ~60% for armor",
+        "Level 2: ~67% chance to not lose durability (tools), ~73% for armor",
+        "Level 3: ~75% chance to not lose durability (tools), ~80% for armor"
+      ],
+      "applicableItems": [
+        "sword",
+        "pickaxe",
+        "axe",
+        "shovel",
+        "hoe",
+        "bow",
+        "crossbow",
+        "trident",
+        "fishing_rod",
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots",
+        "elytra",
+        "mace"
+      ],
+      "incompatibleWith": [],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 5,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.0",
+      "category": "universal",
+      "notes": "For tools: chance to not lose durability = 100/(level+1). For armor: chance to not lose durability = 60 + (40/(level+1)). Effectively multiplies item lifetime by level+1 for tools."
+    },
+    {
+      "name": "Mending",
+      "id": "mending",
+      "maxLevel": 1,
+      "description": "Uses experience orbs to repair the item instead of adding to the player's experience bar.",
+      "effectPerLevel": [
+        "Level 1: Each XP orb repairs 2 durability points on a random mending item"
+      ],
+      "applicableItems": [
+        "sword",
+        "pickaxe",
+        "axe",
+        "shovel",
+        "hoe",
+        "bow",
+        "crossbow",
+        "trident",
+        "fishing_rod",
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots",
+        "elytra",
+        "mace"
+      ],
+      "incompatibleWith": [
+        "Infinity"
+      ],
+      "obtainedFrom": [
+        "Villager Trading",
+        "Loot Chest",
+        "Fishing",
+        "Raid Drops"
+      ],
+      "weight": 2,
+      "treasureOnly": true,
+      "curseOf": false,
+      "versionAdded": "1.9",
+      "category": "universal",
+      "notes": "Treasure enchantment - cannot be obtained from enchanting tables. Each XP orb repairs 2 durability. If the item is fully repaired, remaining XP goes to the player. One of the most valuable enchantments in the game."
+    },
+    {
+      "name": "Curse of Vanishing",
+      "id": "curse_of_vanishing",
+      "maxLevel": 1,
+      "description": "Causes the item to disappear (be deleted) upon the player's death instead of dropping.",
+      "effectPerLevel": [
+        "Level 1: Item is destroyed on death instead of dropping"
+      ],
+      "applicableItems": [
+        "sword",
+        "pickaxe",
+        "axe",
+        "shovel",
+        "hoe",
+        "bow",
+        "crossbow",
+        "trident",
+        "fishing_rod",
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots",
+        "elytra",
+        "mace"
+      ],
+      "incompatibleWith": [],
+      "obtainedFrom": [
+        "Loot Chest",
+        "Villager Trading",
+        "Fishing"
+      ],
+      "weight": 1,
+      "treasureOnly": true,
+      "curseOf": true,
+      "versionAdded": "1.11",
+      "category": "universal",
+      "notes": "A curse enchantment. Cannot be removed via grindstone. The item vanishes on death even if keepInventory is false. Can be useful in PvP to prevent enemies from taking your gear."
+    },
+    {
+      "name": "Curse of Binding",
+      "id": "curse_of_binding",
+      "maxLevel": 1,
+      "description": "Prevents the item from being removed from an armor slot once equipped (except by dying or breaking).",
+      "effectPerLevel": [
+        "Level 1: Armor cannot be removed from its slot once equipped"
+      ],
+      "applicableItems": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots",
+        "elytra"
+      ],
+      "incompatibleWith": [],
+      "obtainedFrom": [
+        "Loot Chest",
+        "Villager Trading",
+        "Fishing"
+      ],
+      "weight": 1,
+      "treasureOnly": true,
+      "curseOf": true,
+      "versionAdded": "1.11",
+      "category": "universal",
+      "notes": "A curse enchantment. Cannot be removed via grindstone. The armor can only be removed by dying or the item breaking. Can also be applied to carved pumpkins and mob heads."
+    },
+    {
+      "name": "Density",
+      "id": "density",
+      "maxLevel": 5,
+      "description": "Increases the damage dealt by the mace based on fall distance, adding extra damage per block fallen.",
+      "effectPerLevel": [
+        "Level 1: +0.5 extra damage per block fallen",
+        "Level 2: +1.0 extra damage per block fallen",
+        "Level 3: +1.5 extra damage per block fallen",
+        "Level 4: +2.0 extra damage per block fallen",
+        "Level 5: +2.5 extra damage per block fallen"
+      ],
+      "applicableItems": [
+        "mace"
+      ],
+      "incompatibleWith": [
+        "Sharpness",
+        "Smite",
+        "Bane of Arthropods",
+        "Breach"
+      ],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 5,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.21",
+      "category": "special",
+      "notes": "Exclusive to the mace. Adds 0.5 extra damage per block fallen per level on top of the base mace smash attack damage. Synergizes with Wind Burst for repeated smash attacks."
+    },
+    {
+      "name": "Breach",
+      "id": "breach",
+      "maxLevel": 4,
+      "description": "Reduces the effectiveness of the target's armor, allowing the mace to ignore a portion of armor.",
+      "effectPerLevel": [
+        "Level 1: Ignores 15% of the target's armor",
+        "Level 2: Ignores 30% of the target's armor",
+        "Level 3: Ignores 45% of the target's armor",
+        "Level 4: Ignores 60% of the target's armor"
+      ],
+      "applicableItems": [
+        "mace"
+      ],
+      "incompatibleWith": [
+        "Sharpness",
+        "Smite",
+        "Bane of Arthropods",
+        "Density"
+      ],
+      "obtainedFrom": [
+        "Enchanting Table",
+        "Anvil",
+        "Loot Chest",
+        "Villager Trading"
+      ],
+      "weight": 2,
+      "treasureOnly": false,
+      "curseOf": false,
+      "versionAdded": "1.21",
+      "category": "special",
+      "notes": "Exclusive to the mace. Reduces the target's effective armor by 15% per level. At Breach IV, 60% of the target's armor is ignored. Extremely effective against heavily armored players in PvP."
+    },
+    {
+      "name": "Wind Burst",
+      "id": "wind_burst",
+      "maxLevel": 3,
+      "description": "Creates a burst of wind on successful mace smash attack, launching the player back into the air.",
+      "effectPerLevel": [
+        "Level 1: Small upward wind burst after smash attack",
+        "Level 2: Medium upward wind burst after smash attack",
+        "Level 3: Large upward wind burst after smash attack"
+      ],
+      "applicableItems": [
+        "mace"
+      ],
+      "incompatibleWith": [],
+      "obtainedFrom": [
+        "Ominous Vault",
+        "Trial Chamber Loot"
+      ],
+      "weight": 1,
+      "treasureOnly": true,
+      "curseOf": false,
+      "versionAdded": "1.21",
+      "category": "special",
+      "notes": "Treasure enchantment exclusive to the mace. Can only be found in ominous vaults and trial chambers. Launches the player upward after a smash, allowing chain smash attacks with Density for massive damage."
+    }
+  ]
+}
